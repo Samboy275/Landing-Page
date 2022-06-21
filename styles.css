@@ -83,9 +83,9 @@ button{
 
 .content .container{
     display: flex;
-    padding: 100px;
+    padding: 70px;
     flex-direction: column;
-    gap: 30px;
+    gap: 70px;
     justify-content: center;
     align-items: center;
 }
