@@ -8,24 +8,92 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <div class="section1">
-            <div class="logo">Header Logo</div>
-            <div class="welcome">Text to welcome website users</div>
-            <div class="welcomep">paragraph to welcome users who come to the page.
-                hoping they sign up for this sorry design.
-            </div>
-            <button>Sign Up</button>
-        </div>
-        <div>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">Samboy Games</div>
             <ul>
-                <li><a>Link 1</a></li>
-                <li><a>Link 1</a></li>
-                <li><a>Link 1</a></li>
+                <li><a>Home</a></li>
+                <li><a>Extra Link Text</a></li>
+                <li><a>About</a></li>
             </ul>
-            <img src="./Flight Wars.png" alt="flight wars image">
+        </div>
+    </nav>
+    <header class="header">
+        <div class="container">
+            <div class="message">
+                <div class="bigtext">Welcome, feel free to check out my games</div>
+                <div class="description">a simple landing page with links to some games i made in unity.
+                    you are free to try the games and give me feedback most games are in prototype stage
+                </div>
+                <button>sign up</button>
+            </div>
+            <div class="image">
+                <img src="./images/Flight Wars.png">
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="container">
+            <div class="info">Games i made :D</div>
+            <div class="boxes">
+                <div class="box">
+                    <img src="./images/Balls Wars.png" alt="image place holder">
+                    <div class="description">Avoid balls that will try to knock you off the platform</div>
+                    <button onclick="GoToLink('//play.unity.com/mg/other/webgl-builds-199364');">Play Demo</button>
+                </div>
+                <div class="box">
+                    <img src="./images/Prototype.png" alt="image place holder">
+                    <div class="description">shoot your way through the enemies</div>
+                    <button onclick="GoToLink('//play.unity.com/mg/other/webgl-builds-209540');">Play Demo</button>
+                </div>
+                <div class="box">
+                    <img src="./images/Target Practice.png" alt="image place holder">
+                    <div class="description">Practice your shooting skills in a  simple 3d first person shooter</div>
+                    <button onclick="GoToLink('//play.unity.com/mg/other/webgl-builds-199351');">Play Demo</button>
+                </div>
+                <div class="box">
+                    <img src="./images/Flight Wars.png" alt="image place holder">
+                    <div class="description">An alien shooter clown with endless time survive the longest time possible</div>
+                    <button>No Demo Available yet</button>
+                </div>
+                <script>
+                    function GoToLink(link)
+                    {
+                        link = "http:"+link;
+                        window.location.href = link;
+                    }
+                </script>
+            </div>
         </div>
     </div>
-    <div class="footer">Copyright   The Odin Project 2022</div>
+
+    <div class="message">
+        <div class="container">
+            <div class="qoutebox">
+                <div class="body">"The Odin project proves to be a very good learning experience so far unlike any other, 
+                    its learn-apply curriculum is so fascinating it might be a challenge if you are new to this type of learning,
+                but from what i have learned so far it is definitely fruitful"</div>
+                <div class="name">Samual Mohamed</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window">
+        <div class="container">
+            <div class="box">
+                <div class="signup">
+                    <div class="boldtext">
+                        text to make the user sign up
+                    </div>
+                    <div class="desciption">
+                        this is a short description please press the button to the side
+                    </div>
+                </div>
+                <button>Sign Up</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer"><div>Copyright   The Odin Project 2022</div></div>
 </body>
 </html>

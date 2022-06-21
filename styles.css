@@ -1,41 +1,170 @@
 body{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
-img{
-    width: 300px;
-}
-
-ul{
+    background-color: black;
+    color: wheat;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+}
+img{
+    border-radius: 50px;
+}
+button{
+    border-radius: 15px;
+    padding: 10px;
+    background-color: wheat;
+    font-weight: bold;
+}
+.header ,.nav{
+    background-color: wheat;
+    color: rgba(0, 0, 0, 0.5);
+}
+.nav .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 300px;
+    align-items: center;
+}
+
+.nav .logo{
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav ul{
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
-}
-.header .logo, ul{
-    margin-bottom: 40px;
-}
-.header{
-    display: flex;
-    justify-content: center;
-    padding: 20px 50px;
     gap: 30px;
-    color: wheat;
-    background-color: #010160;
+    font-weight: 700;
 }
 
-.header .section1{
+.nav li:hover{
+    color: red;
+}
+
+.header .container{
     display: flex;
-    width: 600px;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: flex-start;
+    padding: 100px 300px;
+    gap: 20px;
 }
 
-.welcome{
+.header img{
+    width: 600px;
+    margin-top: auto;
+    height: auto;
+}
+
+.header .message
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.bigtext, .info{
+    font-size: 48px;
+    font-weight: bold;;
+}
+
+.description{
+    font-style: italic;
+}
+.message button , .window button{
+    margin-top: auto;
+    align-self: flex-start;
+    padding: 20px 40px 20px 40px;
+    font-size: 18px;
+}
+
+.image{
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    margin: 10px;
+}
+
+.content .container{
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.content .boxes{
+    display: flex;
+    gap: 40px;
+    justify-content: space-around;
+    text-align: center;
+}
+.content .box img{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.content .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.box .description{
+    width: 200px;
+    flex-wrap: wrap;
+}
+.content button{
+    margin-top: auto;
+}
+.message .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 480px;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: wheat;
+    border-radius: 20px;
+}
+
+.container .body{
+    font-size: 24px;
+    padding: 10px;
+    font-style: italic;
+}
+.container .qoutebox{
+    display: flex;
+    flex-direction: column;
+}
+.container .name{
+    align-self: flex-end;
+    padding: 10px 20px;
+}
+
+.window .container{
+    padding: 100px 400px;
+}
+
+.window .box{
+    display: flex;
+    background-color: rgba(200, 0, 0, 0.3);
+    padding: 30px;
+    gap: 20px;
+    align-items: center;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+.signup .boldtext{
+    font-size: 24px;
+    font-weight: 700;
+
+}
+
+
+.footer{
+    display: flex;
+    background-color: wheat;
+    color: black;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    font-size: 26px;
+    color: rgba(0, 0, 0, 0.5);
 }
